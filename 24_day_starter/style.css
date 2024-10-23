@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url(images/gaalaxy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", "sans-serif";
+    min-height: 100vh;
+}
+
+.input-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1{
+    color: rgb(227, 215, 238);
+    font-size: 3rem;
+    margin: 1rem 0;   
+    text-align: center;
+}
+
+header input{
+    margin: 2rem 1rem 2rem 0;
+}
+
+input, select {
+    padding: 0.6rem 2rem;
+    outline: none;
+    margin-right: 1rem;
+}
+
+button{
+    padding: 1rem ;
+    font-weight: bold;
+    transition: 0.2s ease;
+    border-radius: 10px;
+   border: none;
+}
+
+button:hover{
+    background: rgb(183, 122, 240);
+}
+
+.planet-image{
+    width: 300px;
+    height: 300px;
+}
+
+ main{
+    background-color:rgba(2, 2, 41, 0.726);
+    margin-top: 6rem;
+    padding: 3rem;
+    border-radius: 8px;
+    display: none;
+} 
+
+
+.flex-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.flex-item-image{
+    margin-right: 1.5rem;
+}
+
+.planet-image {
+    width: 300px;
+    height: 300px;
+    display: none;  /* Image is hidden by default */
+}
+
+.description {
+    font-size: 1.5rem;
+    color: white;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Error or result background styling */
+.description.bg-error {
+    background-color: rgba(255, 0, 0, 0.2); 
+}
+
+.description.bg-warning {
+    background-color: rgba(255, 0, 0, 0.2); 
+}
+
+.description.bg-success {
+    background-color: rgba(4, 4, 76, 0.753); /* Green background for success */
+}
+
+@media (max-width: 520px) {
+    main{
+        padding: 1.5rem;
+    }
+
+    header h1{
+        font-size: 1.8rem;
+    }
+
+    .planet-image{
+        width: 200px;
+        height: 200px; 
+    }
+
+    .description {
+        font-size: 0.8rem;
+        padding: 1rem;
+    }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Solar System</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="./images/solar-system-favicon.png" type="image/x-icon">
+</head>
+
+<body>
+	<header>
+		<h1>Calculate a weight of an object on a planet</h1>
+
+		<div class="input-container">
+			<input type="text" id="mass" placeholder="Mass in Kilogram" />
+			<select>
+				<option value='none'>--select planet-- </option>
+				<option value='mercury'>Mercury</option>
+				<option value='venus'>Venus</option>
+				<option value='earth'>Earth</option>
+				<option value='mars'>Mars</option>
+				<option value='jupiter'>Jupiter</option>
+				<option value='saturn'>Saturn</option>
+				<option value='uranus'>Uranus</option>
+				<option value='neptune'>Neptune</option>
+				<option value='pluto'>Pluto</option>
+				
+			</select>
+			<button id="cal-button">Calculate weight</button>
+		</div>
+	</header>
+	<main>
+			<div class="flex-container">
+				<div class="flex-item-image">
+					<img src='./images/earth.png' class="planet-image" />
+				</div>
+				<div class="flex-item description"></div>
+
+			</div>
+
+	</main>
+
+
+
+
+
+	<script src="./scripts/main.js"></script>
+</body>
+
+</html>
